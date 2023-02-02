@@ -100,24 +100,8 @@ code {
   border-radius: .25rem;
 }
 
-span.copy {
-  cursor: pointer;
-  display: inline-flex;
-  flex-direction: column;
-  box-shadow: 0 0 .25rem rgba(#000, .25);
-  color: var(--color-light);
-  text-shadow: 0 1px 0 rgba(#000, .25);
-  padding: .25rem;
-  border-radius: 50%;
-  border: 1px solid fade(@color-light, 25%);
-  &:hover {
-    border: 1px solid fade(@color-light, 50%);
-    background-color: rgba(#000, .25);
-  }
-  &:active {
-    border: 1px solid fade(@color-light, 75%);
-    background-color: rgba(#000, .25);
-  }
+.copy {
+  cursor: copy;
 }
 
 .toast {

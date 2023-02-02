@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <!-- HTML Meta Tags -->
-    <title>James Gabrielsen's professional, project, and social media links</title>
-    <meta name="description" content="James Gabrielsen's professional, project, and social media links">
+    <title>James Gabrielsen | UX, Web, and Graphic Design Portfolio</title>
+    <meta name="description" content="James Gabrielsen | UX, Web, and Graphic Design Portfolio">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://jamo.me/">
+    <meta property="og:url" content="https://jamesgabrielsen.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="James Gabrielsen around the internet">
-    <meta property="og:description" content="James Gabrielsen's professional, project, and social media links">
-    <meta property="og:image" content="https://jamo.me/assets/jamo-open-graph.png">
+    <meta property="og:title" content="JamesGabrielsen.com">
+    <meta property="og:description" content="UX, Web, and Graphic Design Portfolio">
+    <meta property="og:image" content="https://jamesgabrielsen.com/assets/open-graph.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="jamo.me">
-    <meta property="twitter:url" content="https://jamo.me/">
-    <meta name="twitter:title" content="James Gabrielsen around the internet">
-    <meta name="twitter:description" content="James Gabrielsen's professional, project, and social media links">
-    <meta name="twitter:image" content="https://jamo.me/assets/jamo-open-graph.png">
+    <meta property="twitter:domain" content="JamesGabrielsen.com">
+    <meta property="twitter:url" content="https://JamesGabrielsen.com/">
+    <meta name="twitter:title" content="JamesGabrielsen.com">
+    <meta name="twitter:description" content="UX, Web, and Graphic Design Portfolio">
+    <meta name="twitter:image" content="https://jamo.me/assets/open-graph.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/line-awesome-1.3.0/css/line-awesome.min.css">
@@ -36,8 +36,7 @@
     <header class="container">
       <h1><span>J</span>ames Gabrielsen</h1>
       <p class="subtitle">Design Portfolio</p>
-      <p>I'm currently moving my portfolio to a new host and using the opportunity to rebuild it from scratch. It's currently on the backburner while I complete some freelance projects, but it should be live early 2023.</p>
-      <p>In the meantime, you can view my experience at the following links or contact me at <code>jgabrielsen@gmail.com</code> <span class="copy"><i class="las la-copy"></i></span>.</p>
+      <p>I'm currently rebuilding my portfolio site from scratch; it will be live in early 2023. In the meantime, you can contact me at <code class="copy">jgabrielsen@gmail.com</code> and view my experience at the following links:</p>
     </header>
     
     <div class="container links">
@@ -56,6 +55,12 @@
     <script>
       $( document ).ready( function() {
         $('.container').animate({opacity: 1}, 2000);
+      });
+
+      $( '.copy' ).on('click', function() {
+        content = $(this).text();
+        console.log( content );
+        navigator.clipboard.writeText( content );
       });
     </script>
     
