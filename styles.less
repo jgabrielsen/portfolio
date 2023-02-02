@@ -105,5 +105,17 @@ code {
 }
 
 .toast {
-
+  @spacing: 25%;
+  position: fixed;
+  margin: 0 -@spacing;
+  bottom: 1rem;
+  left: 3*@spacing;
+  transform: translateX(-2*@spacing);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  display: none;
+  span { color: var(--color-accent); }
 }

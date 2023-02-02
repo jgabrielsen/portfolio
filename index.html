@@ -50,6 +50,10 @@
       </a>
     </div>
 
+    <div class="toast">
+      <span></span> copied to clipboard
+    </div>
+
     <script src="less.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -57,10 +61,16 @@
         $('.container').animate({opacity: 1}, 2000);
       });
 
+      copyToClipboard = function(e){
+        contents = e.text();
+        $('.toast').fadeIn(100, function(){
+          $('.toast').delay(2000).fadeOut(500);
+        });
+        $('.toast span').text( contents );
+        navigator.clipboard.writeText( contents );
+      };
       $( '.copy' ).on('click', function() {
-        content = $(this).text();
-        console.log( content );
-        navigator.clipboard.writeText( content );
+        copyToClipboard( $(this) );
       });
     </script>
     
